@@ -16,7 +16,9 @@ function SidebarContent(props) {
       <Brand />
       <Stack direction='column' mb='auto' mt='8px'>
         <Box ps='20px' pe={{ md: "16px", "2xl": "1px" }}>
-          <Links routes={routes} />
+          <Links routes={routes.filter(route => route.path === "/default")} />
+
+
         </Box>
       </Stack>
 
